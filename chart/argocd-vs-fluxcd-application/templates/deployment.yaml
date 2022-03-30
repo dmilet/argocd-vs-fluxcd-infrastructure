@@ -21,4 +21,4 @@ spec:
             - name: REDIS_URL
               value: {{ .Values.redisUrl }}
       imagePullSecrets:
-        - name: otcregistry
+        - name: dockerhub

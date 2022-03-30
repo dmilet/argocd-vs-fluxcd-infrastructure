@@ -1,12 +1,12 @@
 image:
-  name: 100.125.7.25:20202/images/argocd-vs-fluxcd-application
-  tag: 1.7
+  name: docker.io/davidmilet/cicd
+  tag: argocd-vs-fluxcd-application_0.0.1
 
 imageCredentials:
-  registry: 100.125.7.25:20202
-  username: eu-de_argocd-vs-fluxcd@H5U55ZJMUA8OYDXDY13D
-  password: 063030b690a8b9ace326a3c5bdebb89762f5fd4a19423a27f2ed5fac8424137d
-  email: someone@host.com
+  registry: docker.io
+  username: davidmilet
+  password: 21939803-844b-49d5-ab74-e23e34c48dbe
+  email: david.milet@gmail.com
 
 replicas: 1
 
@@ -14,7 +14,7 @@ redisUrl: "argocd-vs-fluxcd-redis-master:6379"
 
 redis:
   global:
-    storageClass: "csi-disk"
+    storageClass: "standard"
   auth:
     enabled: false
   replica:
